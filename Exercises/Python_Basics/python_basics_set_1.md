@@ -22,21 +22,16 @@ This exercise set is designed to help you practice the core ideas from class les
 
 * Create **one Python file per exercise**.
 * Use the exact file names shown for each exercise.
-* Each file must contain the required function.
+* Then put them together in a folder and zip it and submit the file in this format **[FirstName]\_[leftmost\_three\_letters\_of\_your\_LastName].zip**. (e.g. "**Barnabas\_Smi.zip**")
+* Each file must contain the required function, function name is given in each exercise.
 * You may create helper functions if needed, but the required function must still exist.
 * Write the exact function signature shown in the exercise.
 * **Type hints are required.** This means your function parameters and return type must include types.
-* Each file should contain **the required function** (and optional helper functions if needed).
-  - [Meaning if you need to create more function in order for your required function to work, you can do so. Ask yourself whether your approach is efficient though].
-* Write correct function signatures. This is very important. You already are given input(s) types and expected output type (return).
 * Do **not** use `import` unless explicitly stated. The purpose of the assignment is for you to write your own functions.
 * Do **not** use `input()` unless explicitly stated.
-* Do **not** print unless explicitly stated.
+* Do **not** `print()` unless explicitly stated.
   - You may however use `print()` statements for yourself just to see the result. But remove or comment them out when submitted.
-* Use the **exact Function Name** shown in each exercise.
 
-* Create **one file per exercise**. Use the exact given file names for each exercise.
-* Then put them together in a folder and zip it and submit the file in this format **[FirstName]\_[leftmost\_three\_letters\_of\_your\_LastName].zip**. (e.g. "**Barnabas\_Smi.zip**")
 
 ## File Naming
 
@@ -110,6 +105,19 @@ total = price * quantity
 ```
 
 Functions should receive input through parameters and return the result.
+
+## Mini Lesson: Types
+
+Relevant types for this exercise: int, float, str, bool, list
+
+```python
+int # Whole numbers such as -1, 0, 1, 2, 3, etc.
+float # Real numbers (numbers with decimals) such as 1.1, 2.00, 3.73, etc.
+str # text or characters
+bool # True or False
+list # a collection of objects
+```
+
 
 ---
 
