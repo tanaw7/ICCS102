@@ -121,9 +121,10 @@ list # a collection of objects
 
 ---
 
+
 ## 1. Greeting Message
 
-Problem: Return a greeting message using a person's name.
+Problem: Return a greeting message in the exact format `Hello, <name>!`.
 
 Function Name: `greeting_message`
 Import: none
@@ -141,13 +142,13 @@ Inputs
 
 Output
 
-* `str` # greeting message
+* `str`
 
-Example Inputs to test:
+Example inputs and their outputs
 
 * `greeting_message("Alice")` → `"Hello, Alice!"`
 * `greeting_message("Nick")` → `"Hello, Nick!"`
-* (Note: you need to wrap your function in print() such as print(greeting_message("Alice")) to see the output in the console)
+* `greeting_message("Somchai")` → `"Hello, Somchai!"`
 
 Requirement
 
@@ -160,7 +161,7 @@ File: `f01_greeting_message.py`
 
 ## 2. Full Name Formatter
 
-Problem: Return a full name from a first name and last name.
+Problem: Return a full name in the exact format `<first_name> <last_name>`.
 
 Function Name: `full_name`
 Import: none
@@ -179,16 +180,17 @@ Inputs
 
 Output
 
-* `str` # full name
+* `str`
 
-Example Inputs to test
+Example inputs and their outputs
 
 * `full_name("Alice", "Wong")` → `"Alice Wong"`
 * `full_name("Somchai", "Jaidee")` → `"Somchai Jaidee"`
+* `full_name("John", "Smith")` → `"John Smith"`
 
 Requirement
 
-* Combine the two strings with one space between them.
+* Combine the two strings with exactly one space between them.
 * Return the full name.
 
 File: `f02_full_name.py`
@@ -197,7 +199,7 @@ File: `f02_full_name.py`
 
 ## 3. Rectangle Area
 
-Problem: Calculate the area of a rectangle.
+Problem: Calculate and return the area of a rectangle using `width * height`.
 
 Function Name: `rectangle_area`
 Import: none
@@ -216,12 +218,13 @@ Inputs
 
 Output
 
-* `float` # rectangle area
+* `float`
 
-Example Inputs to test
+Example inputs and their outputs
 
 * `rectangle_area(5, 3)` → `15`
 * `rectangle_area(2.5, 4)` → `10.0`
+* `rectangle_area(7.2, 2)` → `14.4`
 
 Requirement
 
@@ -234,7 +237,7 @@ File: `f03_rectangle_area.py`
 
 ## 4. Total Price
 
-Problem: Calculate the total price of an item after buying multiple quantities.
+Problem: Calculate and return the total price using `price * quantity`.
 
 Function Name: `total_price`
 Import: none
@@ -253,17 +256,18 @@ Inputs
 
 Output
 
-* `float` # total price
+* `float`
 
-Example Inputs to test
+Example inputs and their outputs
 
 * `total_price(25.0, 3)` → `75.0`
 * `total_price(49.5, 2)` → `99.0`
+* `total_price(10.25, 4)` → `41.0`
 
 Requirement
 
 * Use multiplication.
-* Return the total.
+* Return the total price as a number.
 
 File: `f04_total_price.py`
 
@@ -271,7 +275,7 @@ File: `f04_total_price.py`
 
 ## 5. Minutes to Seconds
 
-Problem: Convert minutes into seconds.
+Problem: Convert minutes into seconds using `minutes * 60`.
 
 Function Name: `minutes_to_seconds`
 Import: none
@@ -289,9 +293,9 @@ Inputs
 
 Output
 
-* `int` # number of seconds
+* `int`
 
-Example Inputs to test
+Example inputs and their outputs
 
 * `minutes_to_seconds(1)` → `60`
 * `minutes_to_seconds(5)` → `300`
@@ -331,7 +335,7 @@ These exercises combine variables, arithmetic, strings, and conditionals.
 
 ## 6. Even or Odd
 
-Problem: Determine whether a number is even or odd.
+Problem: Return `"Even"` if the number is even, otherwise return `"Odd"`.
 
 Function Name: `even_or_odd`
 Import: none
@@ -349,13 +353,14 @@ Inputs
 
 Output
 
-* `str` # either `"Even"` or `"Odd"`
+* `str`
 
-Example Inputs to test
+Example inputs and their outputs
 
 * `even_or_odd(4)` → `"Even"`
 * `even_or_odd(7)` → `"Odd"`
 * `even_or_odd(0)` → `"Even"`
+* `even_or_odd(-3)` → `"Odd"`
 
 Requirement
 
@@ -368,7 +373,7 @@ File: `f06_even_or_odd.py`
 
 ## 7. Grade Category
 
-Problem: Return a grade category based on a score.
+Problem: Return a grade category based on the score. Assume the score is an integer from `0` to `100`.
 
 Function Name: `grade_category`
 Import: none
@@ -386,18 +391,19 @@ Inputs
 
 Output
 
-* `str` # grade category
+* `str`
 
-Rules
+Grade rules
 
-* `90` or above → `"A"`
-* `80` to `89` → `"B"`
-* `70` to `79` → `"C"`
-* below `70` → `"Needs Improvement"`
+* `score >= 90` → `"A"`
+* `score >= 80` and `< 90` → `"B"`
+* `score >= 70` and `< 80` → `"C"`
+* `score < 70` → `"Needs Improvement"`
 
-Example Inputs to test
+Example inputs and their outputs
 
 * `grade_category(95)` → `"A"`
+* `grade_category(90)` → `"A"`
 * `grade_category(82)` → `"B"`
 * `grade_category(75)` → `"C"`
 * `grade_category(60)` → `"Needs Improvement"`
@@ -412,7 +418,7 @@ File: `f07_grade_category.py`
 
 ## 8. Simple Discount
 
-Problem: Apply a discount if the total price is at least 500 baht.
+Problem: Apply a 10% discount if the total price is at least 500 baht. Assume `total >= 0`.
 
 Function Name: `discounted_price`
 Import: none
@@ -430,18 +436,19 @@ Inputs
 
 Output
 
-* `float` # final price after discount
+* `float`
 
-Rule
+Discount rule
 
-* If `total >= 500`, apply a 10% discount.
-* Otherwise, return the original total.
+* If `total >= 500`, return `total * 0.9`.
+* Otherwise, return `total` unchanged.
 
-Example Inputs to test
+Example inputs and their outputs
 
 * `discounted_price(1000)` → `900.0`
 * `discounted_price(500)` → `450.0`
 * `discounted_price(300)` → `300`
+* `discounted_price(750.5)` → `675.45`
 
 Requirement
 
@@ -454,7 +461,7 @@ File: `f08_discounted_price.py`
 
 ## 9. Password Strength Basic
 
-Problem: Check whether a password is long enough.
+Problem: Return `"Strong enough"` if the password has at least 8 characters. Otherwise, return `"Too short"`.
 
 Function Name: `password_strength`
 Import: none
@@ -472,17 +479,14 @@ Inputs
 
 Output
 
-* `str` # password strength message
+* `str`
 
-Rules
-
-* If the password length is at least 8 characters, return `"Strong enough"`.
-* Otherwise, return `"Too short"`.
-
-Example Inputs to test
+Example inputs and their outputs
 
 * `password_strength("abcd")` → `"Too short"`
 * `password_strength("password123")` → `"Strong enough"`
+* `password_strength("12345678")` → `"Strong enough"`
+* `password_strength("1234567")` → `"Too short"`
 
 Requirement
 
@@ -513,18 +517,20 @@ Inputs
 
 Output
 
-* `str` # advice message
+* `str`
 
-Rules
+Advice rules
 
-* If temperature is `35` or above, return `"Very hot, drink water"`.
-* If temperature is from `25` to below `35`, return `"Warm weather"`.
-* If temperature is below `25`, return `"Cool weather"`.
+* `temperature >= 35` → `"Very hot, drink water"`
+* `temperature >= 25` and `< 35` → `"Warm weather"`
+* `temperature < 25` → `"Cool weather"`
 
-Example Inputs to test
+Example inputs and their outputs
 
 * `temperature_advice(36)` → `"Very hot, drink water"`
+* `temperature_advice(35)` → `"Very hot, drink water"`
 * `temperature_advice(30)` → `"Warm weather"`
+* `temperature_advice(25)` → `"Warm weather"`
 * `temperature_advice(20)` → `"Cool weather"`
 
 Requirement
@@ -566,7 +572,7 @@ In functions, loops are often used to build totals, count values, or build lists
 
 ## 11. Sum from 1 to N
 
-Problem: Return the sum of numbers from `1` to `n`.
+Problem: Return the sum of numbers from `1` to `n`, including both `1` and `n`. Assume `n >= 1`.
 
 Function Name: `sum_to_n`
 Import: none
@@ -584,9 +590,9 @@ Inputs
 
 Output
 
-* `int` # sum from 1 to n
+* `int`
 
-Example Inputs to test
+Example inputs and their outputs
 
 * `sum_to_n(5)` → `15`
 * `sum_to_n(10)` → `55`
@@ -596,6 +602,7 @@ Requirement
 
 * Use a `for` loop.
 * Use a variable to store the running total.
+* Do not use the built-in `sum()` function.
 
 File: `f11_sum_to_n.py`
 
@@ -603,7 +610,7 @@ File: `f11_sum_to_n.py`
 
 ## 12. Count Down
 
-Problem: Return a list of numbers counting down from `n` to `1`.
+Problem: Return a list of numbers counting down from `n` to `1`, including both `n` and `1`. Assume `n >= 1`.
 
 Function Name: `count_down`
 Import: none
@@ -621,12 +628,13 @@ Inputs
 
 Output
 
-* `list[int]` # numbers from n down to 1
+* `list[int]`
 
-Example Inputs to test
+Example inputs and their outputs
 
 * `count_down(5)` → `[5, 4, 3, 2, 1]`
 * `count_down(3)` → `[3, 2, 1]`
+* `count_down(1)` → `[1]`
 
 Requirement
 
@@ -639,7 +647,7 @@ File: `f12_count_down.py`
 
 ## 13. Count Vowels
 
-Problem: Count how many vowels are in a word.
+Problem: Count how many vowels are in a word. Count only `a`, `e`, `i`, `o`, and `u`. Do not count `y` as a vowel.
 
 Function Name: `count_vowels`
 Import: none
@@ -657,30 +665,20 @@ Inputs
 
 Output
 
-* `int` # number of vowels
+* `int`
 
-Vowels
-
-```python
-"a", "e", "i", "o", "u"
-```
-
-Example Inputs to test
+Example inputs and their outputs
 
 * `count_vowels("apple")` → `2`
 * `count_vowels("banana")` → `3`
 * `count_vowels("sky")` → `0`
+* `count_vowels("AEIOU")` → `5`
 
 Requirement
 
 * Use a `for` loop.
 * Treat uppercase and lowercase letters the same.
-
-Hint
-
-```python
-word = word.lower()
-```
+* Use `.lower()` to handle uppercase letters.
 
 File: `f13_count_vowels.py`
 
@@ -688,7 +686,7 @@ File: `f13_count_vowels.py`
 
 ## 14. First Multiple of Seven
 
-Problem: Starting from `start`, return the first number that is divisible by 7.
+Problem: Starting from `start`, return the first integer greater than or equal to `start` that is divisible by `7`. Assume `start >= 1`.
 
 Function Name: `first_multiple_of_seven`
 Import: none
@@ -706,13 +704,14 @@ Inputs
 
 Output
 
-* `int` # first number greater than or equal to start that is divisible by 7
+* `int`
 
-Example Inputs to test
+Example inputs and their outputs
 
 * `first_multiple_of_seven(10)` → `14`
 * `first_multiple_of_seven(21)` → `21`
 * `first_multiple_of_seven(22)` → `28`
+* `first_multiple_of_seven(1)` → `7`
 
 Requirement
 
@@ -725,7 +724,7 @@ File: `f14_first_multiple_of_seven.py`
 
 ## 15. Build Even Numbers List
 
-Problem: Return a list of even numbers from `1` to `n`.
+Problem: Return a list of even numbers from `1` to `n` in ascending order. Include `n` if `n` is even. Assume `n >= 1`.
 
 Function Name: `even_numbers_up_to`
 Import: none
@@ -743,13 +742,14 @@ Inputs
 
 Output
 
-* `list[int]` # even numbers from 1 to n
+* `list[int]`
 
-Example Inputs to test
+Example inputs and their outputs
 
 * `even_numbers_up_to(10)` → `[2, 4, 6, 8, 10]`
 * `even_numbers_up_to(7)` → `[2, 4, 6]`
 * `even_numbers_up_to(1)` → `[]`
+* `even_numbers_up_to(2)` → `[2]`
 
 Requirement
 
@@ -758,3 +758,4 @@ Requirement
 * Use `%` to check whether a number is even.
 
 File: `f15_even_numbers_up_to.py`
+
