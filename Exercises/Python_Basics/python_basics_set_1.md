@@ -111,16 +111,19 @@ Functions should receive input through parameters and return the result.
 Relevant types for this exercise: int, float, str, bool, list
 
 ```python
-int # Whole numbers such as -1, 0, 1, 2, 3, etc.
-float # Real numbers (numbers with decimals) such as 1.1, 2.00, 3.73, etc.
-str # text or characters
-bool # True or False
-list # a collection of objects
+int    # Whole numbers such as -1, 0, 1, 2, 3, etc.
+float  # Decimal numbers such as 1.1, 2.0, 3.73, etc.
+str    # Text, such as "hello" or "Alice"
+bool   # A logical value: True or False
+list   # An ordered collection of values, such as [1, 2, 3]
 ```
 
 
 ---
-
+.
+.
+.
+# Exercises Start Here
 
 ## 1. Greeting Message
 
