@@ -762,3 +762,101 @@ Requirement
 
 File: `f15_even_numbers_up_to.py`
 
+---
+
+
+# Bonus Exercise — Hollow Star Box
+
+Extra Credit: **2 points**
+
+Problem: Return a text graphic that forms a hollow square box with `n` rows and `n` columns. Assume `n >= 2`.
+
+The border of the box should use stars (`*`).
+
+The inside of the box should use spaces.
+
+Function Name: `hollow_star_box`
+Import: none
+
+Function Signature:
+
+```python
+def hollow_star_box(n: int) -> str:
+    ...
+```
+
+Inputs
+
+* `n: int`
+
+Output
+
+* `str`
+
+Important note about newline
+
+* "\n" means **new line** in a string.
+* It is used when one string should continue on the next line.
+* For example, `"Hello \nWorld"` means:
+
+```text
+Hello
+World
+```
+
+Example inputs and their outputs
+
+* `hollow_star_box(3)` →
+
+```text
+***
+* *
+***
+```
+
+* `hollow_star_box(5)` →
+
+```text
+*****
+*   *
+*   *
+*   *
+*****
+```
+
+* `hollow_star_box(6)` →
+
+```text
+******
+*    *
+*    *
+*    *
+*    *
+******
+```
+
+Pattern rule
+
+* The first row should contain only stars.
+* The last row should contain only stars.
+* In the middle rows, only the first and last positions should be stars.
+* The inside of the box should be spaces.
+
+Requirement
+
+* Build the graphic step by step using loops.
+* Do not use string repetition shortcuts such as `"*" * number` or `" " * number`.
+* Return the full box as one string.
+* Do not print inside the function.
+
+Testing note
+
+To see the box clearly, you may test your function like this:
+
+```python
+print(hollow_star_box(5))
+```
+
+But the required function itself should return the string.
+
+File: `f_bonus_hollow_star_box.py`
