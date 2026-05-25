@@ -1,6 +1,6 @@
-# ICCS 102 – Week 6 / Module 3 Assignment v1.0
+# ICCS 102 – Module 3 Assignment v1.0
 
-# Randomized Group Whiteboard Function Challenge
+# Whiteboard Algorithm Function Challenge
 
 ## Assignment Type
 
@@ -14,11 +14,11 @@ Students should be placed into **new temporary groups**, not their usual class/p
 
 # Activity Overview
 
-Your group will receive **one randomized programming problem**.
+Your group will work on **3 randomized programming problems**.
 
-Your main task is to design and present your solution on the **whiteboard**.
+Your group will present **1 problem** on the **whiteboard** and submit **3 solved problems** in the Google Doc.
 
-Your solution should be written as a **function** or Python-like function.
+Each solution should be written as a **function** or Python-like function.
 
 The function should show:
 
@@ -49,23 +49,25 @@ By completing this activity, students should be able to:
 
 # Time Plan
 
-Duration: **60–75 minutes**, depending on the number of groups.
+This activity may take **1–2 class sessions**, depending on the number of groups.
 
 Flow:
 
-* Group formation and problem assignment: **5 minutes**
+* Group formation and naming, and problem assignment: **5 minutes**
 * Group discussion and rough planning: **10–15 minutes**
-* Whiteboard solution writing: **about 5 minutes per group**
-* Group presentation: **about 5 minutes per group**
+* Whiteboard rounds: **3 groups write on the board at the same time**
+* Whiteboard solution writing: **about 5 minutes per round**
+* Group presentation: **about 5 minutes per presenting group**
+* Audience Bug Bounty: **up to 5 minutes per presenting group**
 * Instructor feedback and wrap-up: **5–10 minutes**
 
-The **whiteboard presentation is the main activity**.
-
-The Google Doc is a short supporting submission.
+If not all groups present in one class session, the activity will continue in the next class.
 
 ---
 
 # Main Whiteboard Task
+
+For the whiteboard presentation, your group should present **1 problem**.
 
 On the whiteboard, your group should show:
 
@@ -89,11 +91,24 @@ output: summary message as str
 
 3. **Algorithm / pseudocode / Python-like code**
 
-Your solution may be written as pseudocode, Python-like code, or actual Python. It should still look like a function-based solution.
+Your solution may be written as pseudocode, Python-like code, actual Python. It should still look like a function-based solution.
 
 4. **One quick test case**
 
 Show at least one example input and expected output on the board.
+
+You may write the test case as a small table.
+
+Example:
+
+| Test Case | Problem | Input                                                                 | Important Step / Check                 | Expected Output                                       |
+| --------- | ------- | --------------------------------------------------------------------- | -------------------------------------- | ----------------------------------------------------- |
+| 1         | a       | `items = [("rice", 40), ("drink", 25)]`, `budget = 100`               | total = 65, total <= budget            | `Within budget, 35 baht left`                         |
+| 2         | a       | `items = [("rice", 40), ("drink", 25), ("cake", 50)]`, `budget = 100` | total = 115, total > budget            | `Over budget by 15 baht`                              |
+| 3         | b       | `temperatures = [18, 30, 35]`                                         | 18 = cool, 30 = warm, 35 = hot         | `1 hot day`                                           |
+| 4         | c       | `boxes = [12, 17]`, `students = 5`                                    | 12 // 5 = 2 left 2; 17 // 5 = 3 left 2 | `Each student gets 5 snacks total, 4 leftovers total` |
+
+For problems with repeated steps, show at least one row that explains what happens during the loop.
 
 5. **Explanation**
 
@@ -107,28 +122,54 @@ Example explanation style:
 
 ---
 
+# Audience Bug Bounty
+
+During another group's presentation, any individual student may point out a possible issue or suggest a fix.
+
+Examples:
+
+* missing input,
+* unclear output,
+* wrong data type,
+* missing condition,
+* missing repeated step,
+* calculation mistake,
+* test case that would break the algorithm.
+
+This is **first come, first serve**.
+
+A useful comment or fix may earn **+0.5 individual bonus point**. (Max accumulative 3 pts)
+
+The instructor has the final say on whether the bonus point is awarded.
+
+Collaborative effort: If the help is successful, the presenting group gets 0.5 pts as well.
+
+---
+
 # Google Doc Submission
 
 Submit one short Google Doc as a PDF.
 
-The document should be clear but does **not** need to be long.
+The document should contain **3 solved problems**.
 
-Recommended length: **1–2 pages**.
+The problem presented on the whiteboard may be one of the 3 submitted problems.
+
+The document should be clear but does **not** need to be long.
 
 ## Required Sections
 
 Keep this document concise. It should record your solution clearly, not become a long report.
 
 ### 1. Group Information
-#### Put these info in a table for organization
 
-* group name (4-10 Characters long),
+* group name,
 * group members,
-* assigned problem number and title.
+* the 3 selected problem numbers and titles,
+* the problem presented on the whiteboard.
 
 ### 2. Function Design
 
-Write your function signature and identify inputs/outputs.
+For each of the 3 problems, write your function signature and identify inputs/outputs.
 
 Example format:
 
@@ -140,15 +181,15 @@ Example format:
 
 ### 3. Algorithm Explanation
 
-Briefly explain how your algorithm works in **5–8 steps**.
+For each of the 3 problems, briefly explain how your algorithm works in **5–8 steps**.
 
 ### 4. Whiteboard Solution
 
-Include a photo, screenshot, or typed copy of your whiteboard solution.
+Include a photo, screenshot, or typed copy of your whiteboard solution for the problem your group presented.
 
 ### 5. Manual Trace
 
-Show **2 test cases**.
+Show at least **2 test cases per submitted problem**.
 
 For each test case, include:
 
@@ -156,9 +197,11 @@ For each test case, include:
 * important repeated steps or decision checks,
 * expected output.
 
+Make a table for the test cases and their inputs, checks, outputs.
+
 ---
 
-# Allowed Python Ideas
+# Suggested Python Ideas
 
 You may use:
 
@@ -188,7 +231,7 @@ You may write Python-like pseudocode if you are not sure about exact syntax.
 
 # Randomized Problem Options
 
-The instructor will assign your group one problem randomly.
+The instructor will assign or approve 3 problems for your group. One of these problems will be presented on the whiteboard.
 
 Each problem is designed to require repeated checking and decision-making. The problem statement does not directly tell you what variables, loops, or conditions to use. Your group must infer those from the situation.
 
@@ -514,18 +557,11 @@ Example:
 
 ---
 
-# Possible Randomization Method
-
-The instructor may assign problems using any of the following methods:
-
-* write numbers 1–20 on the board and let groups draw numbers,
-* use an online random number generator.
-
----
-
 # Submission Format
 
 Submit one group Google Doc as a **PDF**.
+
+Your submission should include **3 solved problems**.
 
 ## File Naming Format
 
@@ -541,16 +577,25 @@ ICCS102_Week6_FunctionChallenge_GroupDragon.pdf
 
 ---
 
-# Rubric (10 Points + 1 Bonus)
+| Criteria                             | Excellent                                                                                                                     | Good                                                                                    | Satisfactory                                                                     | Not Acceptable                                             |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| Whiteboard function and presentation | 4 pts: Function-style solution is clear, organized, and explained step by step as the algorithm progresses.                   | 3 pts: Mostly clear function-style solution and understandable explanation.             | 2 pts: Some clear ideas, but board solution or explanation has important gaps.   | 0 pts: No meaningful board solution or presentation.       |
+| Inputs and outputs                   | 2 pts: Clearly identifies function parameters, input types, output/return value, and output type.                             | 1.5 pts: Mostly identifies inputs and outputs with minor missing details.               | 1 pt: Inputs/outputs are present but types or meanings are unclear.              | 0 pts: Inputs and outputs are missing or mostly incorrect. |
+| Algorithm logic                      | 2 pts: Logic is sound, handles repeated work and decision-making appropriately, and would likely work if converted to Python. | 1.5 pts: Logic is mostly correct but has minor gaps.                                    | 1 pt: Some useful logic is present but important parts are missing or incorrect. | 0 pts: Algorithm is missing or not understandable.         |
+| Manual trace and Google Doc          | 2 pts: Google Doc is readable and includes 2 useful test cases with inputs, key steps/checks, and expected outputs.           | 1.5 pts: Google Doc is mostly complete, but test cases or explanation could be clearer. | 1 pt: Google Doc is incomplete or test cases are weak.                           | 0 pts: Google Doc is missing or not usable.                |
+| Stretch challenge bonus              | +1 pt: Awarded if the group meaningfully attempts and completes the stretch challenge.                                        |                                                                                         |                                                                                  |                                                            |
+| Presenting group correction bonus    | +0.5 pt: Awarded if the presenting group successfully corrects or improves their solution after useful feedback.              |                                                                                         |                                                                                  |                                                            |
+| Individual Bug Bounty bonus          | +0.5 pt per useful comment or fix accepted by the instructor. First come, first serve. Maximum +3 pts per individual student. |                                                                                         |                                                                                  |                                                            |
 
-| Criteria                             |                                                                                                                     Excellent |                                                                                    Good |                                                                     Satisfactory |                                             Not Acceptable |
-| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------: | -------------------------------------------------------------------------------: | ---------------------------------------------------------: |
-| Whiteboard function and presentation |                   4 pts: Function-style solution is clear, organized, and explained step by step as the algorithm progresses. |             3 pts: Mostly clear function-style solution and understandable explanation. |   2 pts: Some clear ideas, but board solution or explanation has important gaps. |       0 pts: No meaningful board solution or presentation. |
-| Inputs and outputs                   |                             2 pts: Clearly identifies function parameters, input types, output/return value, and output type. |               1.5 pts: Mostly identifies inputs and outputs with minor missing details. |              1 pt: Inputs/outputs are present but types or meanings are unclear. | 0 pts: Inputs and outputs are missing or mostly incorrect. |
-| Algorithm logic                      | 2 pts: Logic is sound, handles repeated work and decision-making appropriately, and would likely work if converted to Python. |                                    1.5 pts: Logic is mostly correct but has minor gaps. | 1 pt: Some useful logic is present but important parts are missing or incorrect. |         0 pts: Algorithm is missing or not understandable. |
-| Manual trace and Google Doc          |           2 pts: Google Doc is readable and includes 2 useful test cases with inputs, key steps/checks, and expected outputs. | 1.5 pts: Google Doc is mostly complete, but test cases or explanation could be clearer. |                           1 pt: Google Doc is incomplete or test cases are weak. |                0 pts: Google Doc is missing or not usable. |
-| Stretch challenge bonus              |                                        +1 pt: Awarded if the group meaningfully attempts and completes the stretch challenge. |                                                                                         |                                                                                  |                                                            |
+Main score: **10 points**
 
-Maximum score: **11 / 10**
+Bonus:
+
+* Stretch challenge: **+1 group bonus**
+* Presenting group correction: **+0.5 group bonus**
+* Individual Bug Bounty: **+0.5 per accepted help, up to +3 per individual student**
 
 ---
+
+* Can you trace it with one example?
+* What would the function return or print exactly?
