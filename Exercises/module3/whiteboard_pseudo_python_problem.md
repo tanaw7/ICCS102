@@ -89,7 +89,7 @@ output: summary message as str
 
 3. **Algorithm / pseudocode / Python-like code**
 
-Your solution may be written as pseudocode, Python-like code, actual Python, or a flowchart. It should still look like a function-based solution.
+Your solution may be written as pseudocode, Python-like code, or actual Python. It should still look like a function-based solution.
 
 4. **One quick test case**
 
