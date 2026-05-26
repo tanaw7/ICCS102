@@ -79,21 +79,11 @@ Example:
 calculate_budget(items: list, budget: float) -> str
 ```
 
-2. **Short input/output notes**
-
-Example:
-
-```text
-items: list of item prices
-budget: available money
-output: summary message as str
-```
-
-3. **Algorithm / pseudocode / Python-like code**
+2. **Algorithm / pseudocode / Python-like code**
 
 Your solution may be written as pseudocode, Python-like code, actual Python. It should still look like a function-based solution.
 
-4. **One quick test case**
+3. **One quick test case**
 
 Show at least one example input and expected output on the board.
 
@@ -110,7 +100,7 @@ Example:
 
 For problems with repeated steps, show at least one row that explains what happens during the loop.
 
-5. **Explanation**
+4. **Explanation**
 
 During the presentation, explain what happens step by step as your algorithm runs.
 
