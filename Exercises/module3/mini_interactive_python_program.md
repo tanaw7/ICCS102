@@ -51,7 +51,6 @@ You may use simple standard Python libraries such as `random`, `math`, `time`, `
 
 Your Python program must include:
 
-* at least **3 variables**,
 * at least **1 input()** statement,
 * at least **3 print()** statements,
 * at least **1 if / elif / else structure**,
