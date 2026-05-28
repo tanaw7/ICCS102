@@ -14,9 +14,9 @@ Students should be placed into **new temporary groups**, not their usual class/p
 
 # Activity Overview
 
-Your group will work on **3 randomized programming problems**.
+Your group will work on **3 programming problems**.
 
-Your group will present **1 problem** on the **whiteboard** and submit **3 solved problems** in the Google Doc.
+Your group will present **1 problem** on the **whiteboard** and submit **3 solved problems** of your own choice in the Google Doc.
 
 Each solution should be written as a **function** or Python-like function.
 
@@ -140,9 +140,7 @@ Collaborative effort: If the help is successful, the presenting group gets 0.5 p
 
 Submit one short Google Doc as a PDF.
 
-The document should contain **3 solved problems**.
-
-The problem presented on the whiteboard may be one of the 3 submitted problems.
+The document should contain **3 solved problems**, one from the whiteboard and 2 of your own choice.
 
 The document should be clear but does **not** need to be long.
 
