@@ -35,6 +35,8 @@ By completing this project, you should demonstrate that you can:
 
 Your final project must be a **complete Python program** that works and produces the intended results.
 
+The full project codebase should contain approximately **600–2000 meaningful lines of Python code** in total across all source files. This is a project-level expectation. Projects that are much smaller may not show enough work, while projects that are much larger should remain well organized and understandable.
+
 Every group member must contribute to the actual Python code. Each student must contribute **at least 100 meaningful lines of code** to the project.
 
 This is a required minimum contribution. There is **no exception** to this rule. A student cannot meet the project requirement by only writing the report, making slides, preparing assets, testing, or giving ideas. Every student must code.
@@ -65,7 +67,7 @@ Examples include:
 
 Advanced external libraries are not required. Do not choose a project that depends on complex infrastructure or difficult setup.
 
-The 100-line contribution should be meaningful project code. Blank lines, purely decorative comments, copied code that the student cannot explain, or generated code that the student does not understand should not be counted as meaningful contribution.
+The line-count requirements refer to meaningful project code. Blank lines, purely decorative comments, copied code that the student cannot explain, or generated code that the student does not understand should not be counted as meaningful contribution.
 
 ---
 
@@ -275,6 +277,7 @@ Before submitting, make sure that:
 * [ ] Your zip file is named correctly: `[FullName]_[three_leftmost_letters_of_LastName]_Final_Project.zip`
 * [ ] Your individual report is included.
 * [ ] All Python source code files are included.
+* [ ] The full project codebase contains approximately 600–2000 meaningful lines of Python code.
 * [ ] All required assets, data files, and external files are included.
 * [ ] Instructions for running the program are included in `README.md`.
 * [ ] The program runs successfully.
