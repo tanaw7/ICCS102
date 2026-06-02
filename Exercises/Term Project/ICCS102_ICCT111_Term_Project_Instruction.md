@@ -35,11 +35,9 @@ By completing this project, you should demonstrate that you can:
 
 Your final project must be a **complete Python program** that works and produces the intended results.
 
-The full project codebase should contain approximately **600–2000 meaningful lines of Python code** in total across all source files. This is a project-level expectation. Projects that are much smaller may not show enough work, while projects that are much larger should remain well organized and understandable.
-
-Every group member must contribute to the actual Python code. Each student must contribute **at least 100 meaningful lines of code** to the project.
-
-This is a required minimum contribution. There is **no exception** to this rule. A student cannot meet the project requirement by only writing the report, making slides, preparing assets, testing, or giving ideas. Every student must code.
+* The full project codebase should contain approximately **600–2000 meaningful lines of Python code** in total across all source files.
+* Each student must contribute **at least 100 meaningful lines of code** to the project.
+* **Every student must code.**
 
 Your program should include several course concepts, such as:
 
@@ -97,7 +95,7 @@ You may work in groups for the project code. The **code may be shared within the
 
 Every student must personally contribute at least **100 meaningful lines of code**. Every student must identify which files, functions, features, or parts they worked on and be able to explain their own code.
 
-A student cannot meet the project requirement by only writing the report, preparing slides, designing graphics, testing, giving ideas, or organizing the group. If a student cannot clearly explain their own coding contribution, or if their contribution is below the required minimum, this may seriously affect their individual project score.
+If a student cannot clearly explain their own coding contribution, or if their contribution is below the required minimum, this may seriously affect their individual project score.
 
 ---
 
