@@ -55,14 +55,14 @@ The goal is not only to guess the answer. The goal is to understand **why** the 
 
 For each problem:
 
-1. The whole class reads the code silently. (1 min)
-2. Teams discuss the possible mistake and fix. (2 mins)
-3. Instructor chooses one team answers first. (2 mins) (the chosen team is rotated)
-4. If needed, another team may answer. (1 min)
-5. The instructor confirms the mistake. (1 min)
-6. The corrected code is run again on the projector. (1 min)
+1. (1 min ) The whole class reads the code silently.
+2. (2 mins) Teams discuss the possible mistake and fix.
+3. (2 mins) Instructor chooses arbitarily one team answers first. (Chosen team is rotated)
+4. (1 min ) If needed, another team may answer.
+5. (1 min ) The instructor confirms the mistake.
+6. (1 min ) The corrected code is run again on the projector.
 
-Total per round: 6-8 mins
+Total round time: 6-10 mins
 
 ## Suggested Scoring
 
