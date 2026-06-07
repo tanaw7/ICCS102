@@ -6,14 +6,14 @@ However, be prepared to search for more information from the Web when a term or 
 
 1. **Branching (aka Decision)**
    A. What is branching in programming?
-   B. Give a real-life example of branching that can also be applied to real-life activities?
+   B. Give a real-life example of branching that can also be applied to daily activities?
 
 2. **Syntax of if statements in Python**
    A. What is the syntax of a basic if statement?
    B. What is an if-else statement, and how does it differ from a single if statement?
    C. What is an elif statement?
 
-3. Why is **indentation** is very important in the branching syntax of Python?
+3. Why is **indentation** very important in the branching syntax of Python?
 
 4. Can we nest if-else statements? Provide an example if possible.
 
@@ -37,7 +37,7 @@ However, be prepared to search for more information from the Web when a term or 
    A. List additional string functions that return Boolean values.
    B. Give an example for each operator/function listed in (a) along with possible results returned from your examples.
 
-10. Is it a good idea when we use nested branching to solve the [three (not twenty) questions example](https://open.cs.uwaterloo.ca/python-from-scratch/6/6/transcript)? Justify.
+10. Is it a good idea to use nested branching to solve the [three (not twenty) questions example](https://open.cs.uwaterloo.ca/python-from-scratch/6/6/transcript)? Justify.
 
 11. Provide three sets of values for the parameters `a`, `b`, and `c` that make the code below to return `a`, `b`, and `c`, respectively.
 
@@ -61,7 +61,7 @@ def min_3(a, b, c):
     A. What is the role of conditions in branching (decision) and iteration (repetition) statements?
     B. In this sense, what are similarities and differences between these two types of statements?
 
-15. How many ways can we make a loop stop (making the condition false)?
+15. How many ways can we make a loop stop? Is making the condition false the only way?
 
 16. Trace the execution of the [quotient algorithm](https://open.cs.uwaterloo.ca/python-from-scratch/8/3/transcript) by using the tracing table shown at the end of [Iteration using while (Part 2)](https://open.cs.uwaterloo.ca/python-from-scratch/8/2/transcript). Let's adjust the table a bit to fit this problem. Do the tracing for two sets of input values, one for a couple of loop attempts, and another for 7 attempts or more.
 
@@ -85,11 +85,11 @@ def min_3(a, b, c):
 
 19. What is the process (recipe) discussed in the assigned resource of writing iteration statement(s) from a word problem? Explain this in your own words; do not copy the resource.
 
-20. What are similarities and differences of strings and sequences (such as lists) in Python in the concept?
+20. What are the similarities and differences between strings and sequences (such as lists) in Python, conceptually?
 
 21. The resource has suggested that
     "Using an index will return an item.
-    Using slice will return a list."
+    Using a slice will return a subsequence."
     Demonstrate this caution with Python code.
 
-22. When should we use one between while and for loops? In the other words, when would a while loop be more suitable than a for loop and vice versa?
+22. What is the main difference in usage between `while` and `for` loops? In other words, when would a `while` loop be more suitable than a `for` loop, and vice versa?
