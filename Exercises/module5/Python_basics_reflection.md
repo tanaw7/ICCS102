@@ -51,7 +51,7 @@ Describe both your strengths and your limits. What can you do independently with
 
 Use at least **two concrete examples**. If you performed well overall, you may also reflect on the kinds of mistakes you avoided and why you think you were able to avoid them.
 
-### 6. How did you prepare for this assignment, and how effective was that preparation?
+### 6. How did you prepare for the Python Basics Part-2 assignment, and how effective was that preparation?
 
 What did you do that helped? What did you fail to do, or what could you have done better? Answer honestly and specifically.
 
