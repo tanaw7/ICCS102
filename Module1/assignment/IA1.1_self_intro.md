@@ -53,6 +53,14 @@ Answer the same five points:
 
 You do not need to write an essay. A short but complete response is sufficient.
 
+## AI Policy
+
+**No AI assistance is allowed for this assignment.**
+
+Do not use ChatGPT, Gemini, Claude, or any other generative AI tool to write or rewrite your spoken or written self-introduction.
+
+This exercise is about introducing **yourself**, in your own words. You may use the assignment instructions and ask the instructor if any requirement is unclear.
+
 ## Submission and File Naming Format
 
 ### Submission
