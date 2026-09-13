@@ -131,6 +131,14 @@ Example:
 ICCS102_Week1_Email_Somchai_Jai.pdf
 ```
 
+## AI Policy
+
+**No AI assistance is allowed for this assignment.**
+
+Do not use ChatGPT, Gemini, Claude, or any other generative AI tool to draft, rewrite, correct, or improve your sample email.
+
+The purpose of the exercise is for you to practice writing a basic university email yourself. You may refer to the example structure in this assignment and ask the instructor or teaching assistants for clarification.
+
 ## Rubric
 
 | Criteria | Excellent | Good | Satisfactory | Unsatisfactory |
