@@ -29,6 +29,8 @@ Do not answer from memory and do not guess.
 
 Read the page carefully and answer the questions below using information from the assignment instructions.
 
+For all intent and purposes, you can either choose Individual Assignment 1.4 or 1.5 to answer this assignment.
+
 ### Questions
 
 1. What is the **deadline** for the assignment?
