@@ -182,13 +182,9 @@ If the program does not run, check:
 
 You should know where your own work is stored.
 
-1. Open **Windows File Explorer**.
-2. Navigate to the assignment folder you created earlier.
-3. Find:
-
-```text
-hello_name.py
-```
+1. On the left pane. Right click on your folder (the one you created).
+2. Go to "Open In" -> "Explorer"
+3. There you should find your file.
 
 Confirm that the file is physically inside your assignment folder.
 
