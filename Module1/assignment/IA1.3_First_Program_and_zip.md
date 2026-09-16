@@ -56,7 +56,7 @@ Remember where you created this folder.
 2. Search for:
 
 ```text
-PyCharm
+PyCharm Community Edition 2025
 ```
 
 3. Open PyCharm.
