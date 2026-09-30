@@ -40,11 +40,14 @@ Every team member must be able to explain at least one part of the final mind ma
 
 ## Submission and File Naming Format
 
-The coordinator submits a **viewable Canva or Google Drawings link** in the assignment's private comment. Include the team name and team members listed alphabetically by first name on the mind map. Check that the instructor can open the link before submitting it.
+The coordinator submits a **viewable Canva or Google Drawings link** in the assignment's private comment. Include the team number and team name and team members listed alphabetically by first name on the mind map. Check that the instructor can open the link before submitting it.
 
 ```text
-ICCS102 M2 Review Team - [TeamName]
+ICCS102 M2 Mind Map - [TeamNumber - TeamName]
+e.g.
+ICCS102 M2 Mind Map - [07 - BeastCode]
 ```
+
 
 ## Rubric - 10 Points
 
