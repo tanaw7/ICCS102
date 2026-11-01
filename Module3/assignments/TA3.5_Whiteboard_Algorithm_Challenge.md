@@ -1,4 +1,4 @@
-# ICCS102 — Module 3 Team Assignment
+# ICCS102 — Module 3 Team Assignment 3.5
 # Whiteboard Algorithm Function Challenge
 
 **10 points + up to 1 stretch bonus point**  
