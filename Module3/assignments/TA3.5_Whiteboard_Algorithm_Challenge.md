@@ -37,7 +37,7 @@ Show your **assigned problem** with:
 
 Use three board areas: **inputs**, **Python function**, and **trace/output**. Use 2–3 input entries where the problem allows it. Write matching lists on separate lines.
 
-Up to three groups write at the same time. Allow about **5 minutes to write** and **3 minutes per group to explain**. Each member explains part of the solution. Be ready to explain why a condition is true or false and how values change during the loop.
+Up to three groups write at the same time. You are allowed about **5 minutes to write** and **3 minutes per group to explain**. Each member explains part of the solution. Be ready to explain why a condition is true or false and how values change during the loop.
 
 ## Google Sheet Submission
 
