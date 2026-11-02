@@ -39,7 +39,9 @@ Use three board areas: **inputs**, **Python function**, and **trace/output**. Us
 
 Up to three groups write at the same time. You are allowed about **5 minutes to write** and **3 minutes per group to explain**. Each member explains part of the solution. Be ready to explain why a condition is true or false and how values change during the loop.
 
-## Google Sheet Submission
+## Google Doc Submission (PDF)
+
+File name: [TeamName]_submission.pdf
 
 Record your section, group name, members and assigned board problem in your team's tab or area of the designated Google Sheet.
 
@@ -64,7 +66,7 @@ For the assigned problem, also include a readable board photo or typed copy of y
 
 Use line breaks and text wrapping to keep code and traces readable. For short test inputs, trace every entry. **Six test cases are required in total.**
 
-One coordinator submits the **Google Sheet link in Google Classroom** by the announced deadline. Ensure the instructor has access.
+One coordinator submits the PDF of your work to the google classroom.
 
 ---
 
