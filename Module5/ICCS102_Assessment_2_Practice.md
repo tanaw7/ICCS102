@@ -20,7 +20,7 @@ Complete these eight exercises to practise combining conditions, loops, collecti
 
 - Annotate every parameter except `self`.
 - Write the return type after `->`. For `__init__`, write `-> None` and annotate all other parameters.
-- Specify collection contents, such as `list[int]`, `tuple[int, int]`, or `dict[str, int]`; a bare `list`, `tuple`, `set`, or `dict` is insufficient when the contents are specified.
+- Basic collection annotations (`list`, `tuple`, `set`, and `dict`) are accepted without deduction. Correct detailed forms, such as `list[int]` or `dict[str, int]`, are also accepted. Annotations must identify the correct collection type.
 - For a parameter that receives an object, use the required class name as its type.
 - Infer the types from each question. The supplied outlines deliberately omit annotations; you must complete them.
 
@@ -37,6 +37,8 @@ Result columns show how returned values look when printed. Return the values fro
 
 ## Exercises
 
+Each exercise includes a copyable test block. Paste it below your function or class definitions, run the file, and compare the printed results with the example table. Remove or comment out these test calls before submission.
+
 ### 1. Clamp a Reading
 
 A reading and its allowed bounds are integers. `bounds` is a tuple `(minimum, maximum)`, where minimum is less than or equal to maximum. Return the reading if it is inside the inclusive bounds. If it is below the minimum, return the minimum; if above the maximum, return the maximum.
@@ -46,7 +48,7 @@ Values and bounds may be negative, zero, or positive. Return an integer.
 **Function:** `clamp_reading(value, bounds)`
 
 ```python
-def clamp_reading(value, bounds):
+def clamp_reading(value, bounds):  # Don't forget type hints
     ...
 ```
 
@@ -56,6 +58,15 @@ def clamp_reading(value, bounds):
 | `clamp_reading(-3, (0, 8))` | `0` |
 | `clamp_reading(12, (0, 8))` | `8` |
 | `clamp_reading(4, (4, 4))` | `4` |
+
+**Try the examples:** Run these calls to check the results shown above.
+
+```python
+print(clamp_reading(7, (2, 10)))
+print(clamp_reading(-3, (0, 8)))
+print(clamp_reading(12, (0, 8)))
+print(clamp_reading(4, (4, 4)))
+```
 
 **File:** `p01_clamp_reading.py`
 
@@ -68,7 +79,7 @@ The list may be empty. Use a loop to build the dictionary. Dictionary order does
 **Function:** `count_labels(labels)`
 
 ```python
-def count_labels(labels):
+def count_labels(labels):  # Don't forget type hints
     ...
 ```
 
@@ -78,6 +89,15 @@ def count_labels(labels):
 | `count_labels(["A", "a", "A"])` | `{'A': 2, 'a': 1}` |
 | `count_labels(["", ""])` | `{}` |
 | `count_labels([])` | `{}` |
+
+**Try the examples:** Run these calls to check the results shown above.
+
+```python
+print(count_labels(["red", "blue", "red", ""]))
+print(count_labels(["A", "a", "A"]))
+print(count_labels(["", ""]))
+print(count_labels([]))
+```
 
 **File:** `p02_count_labels.py`
 
@@ -90,7 +110,7 @@ Use a loop and sets to keep track of IDs already seen and IDs repeated. The list
 **Function:** `repeated_ids(ids)`
 
 ```python
-def repeated_ids(ids):
+def repeated_ids(ids):  # Don't forget type hints
     ...
 ```
 
@@ -100,6 +120,15 @@ def repeated_ids(ids):
 | `repeated_ids([1, 2, 3])` | `set()` |
 | `repeated_ids([0, -1, 0, -1])` | `{0, -1}` |
 | `repeated_ids([])` | `set()` |
+
+**Try the examples:** Run these calls to check the results shown above.
+
+```python
+print(repeated_ids([4, 2, 4, 4, 3, 2]))
+print(repeated_ids([1, 2, 3]))
+print(repeated_ids([0, -1, 0, -1]))
+print(repeated_ids([]))
+```
 
 **File:** `p03_repeated_ids.py`
 
@@ -113,10 +142,10 @@ Add type hints to this structure:
 
 ```python
 class Reading:
-    def __init__(self, title, total_pages, pages_read):
+    def __init__(self, title, total_pages, pages_read):  # Don't forget type hints
         ...
 
-def pages_left(reading, extra_pages):
+def pages_left(reading, extra_pages):  # Don't forget type hints
     ...
 ```
 
@@ -129,6 +158,15 @@ Use the object's attributes in the calculation and annotate `reading` using the 
 | `pages_left(Reading("Notes", 12, 12), 0)` | `0` |
 | `pages_left(Reading("Blank", 0, 0), 5)` | `0` |
 
+**Try the examples:** Run these calls to check the results shown above.
+
+```python
+print(pages_left(Reading("Python", 100, 30), 20))
+print(pages_left(Reading("Python", 100, 30), 80))
+print(pages_left(Reading("Notes", 12, 12), 0))
+print(pages_left(Reading("Blank", 0, 0), 5))
+```
+
 **File:** `p04_reading_class.py`
 
 ### 5. Combine Vote Counts
@@ -140,7 +178,7 @@ Names are case-sensitive strings and counts are nonnegative integers. Either dic
 **Function:** `combine_votes(first, second)`
 
 ```python
-def combine_votes(first, second):
+def combine_votes(first, second):  # Don't forget type hints
     ...
 ```
 
@@ -150,6 +188,15 @@ def combine_votes(first, second):
 | `combine_votes({}, {"A": 0})` | `{'A': 0}` |
 | `combine_votes({"A": 2}, {})` | `{'A': 2}` |
 | `combine_votes({}, {})` | `{}` |
+
+**Try the examples:** Run these calls to check the results shown above.
+
+```python
+print(combine_votes({"A": 3, "B": 2}, {"B": 4, "C": 1}))
+print(combine_votes({}, {"A": 0}))
+print(combine_votes({"A": 2}, {}))
+print(combine_votes({}, {}))
+```
 
 **File:** `p05_combine_votes.py`
 
@@ -164,7 +211,7 @@ Use nested loops. Return index pairs, not the matching strings.
 **Function:** `matching_positions(first, second)`
 
 ```python
-def matching_positions(first, second):
+def matching_positions(first, second):  # Don't forget type hints
     ...
 ```
 
@@ -174,6 +221,15 @@ def matching_positions(first, second):
 | `matching_positions(["x", "x"], ["x", "x"])` | `[(0, 0), (0, 1), (1, 0), (1, 1)]` |
 | `matching_positions(["A"], ["a"])` | `[]` |
 | `matching_positions([], ["x"])` | `[]` |
+
+**Try the examples:** Run these calls to check the results shown above.
+
+```python
+print(matching_positions(["A", "B", "A"], ["B", "A"]))
+print(matching_positions(["x", "x"], ["x", "x"]))
+print(matching_positions(["A"], ["a"]))
+print(matching_positions([], ["x"]))
+```
 
 **File:** `p06_matching_positions.py`
 
@@ -188,7 +244,7 @@ Use nested loops to find each row's smallest and largest values. Do not use `min
 **Function:** `row_spreads(matrix)`
 
 ```python
-def row_spreads(matrix):
+def row_spreads(matrix):  # Don't forget type hints
     ...
 ```
 
@@ -198,6 +254,15 @@ def row_spreads(matrix):
 | `row_spreads([[7], [-2]])` | `[0, 0]` |
 | `row_spreads([[4, 4], [0, 9]])` | `[0, 9]` |
 | `row_spreads([])` | `[]` |
+
+**Try the examples:** Run these calls to check the results shown above.
+
+```python
+print(row_spreads([[3, 8, 5], [-4, -1, -6]]))
+print(row_spreads([[7], [-2]]))
+print(row_spreads([[4, 4], [0, 9]]))
+print(row_spreads([]))
+```
 
 **File:** `p07_row_spreads.py`
 
@@ -212,7 +277,7 @@ Use nested loops to count qualifying values and compare row counts. Select by co
 **Function:** `best_reading_row(matrix, threshold)`
 
 ```python
-def best_reading_row(matrix, threshold):
+def best_reading_row(matrix, threshold):  # Don't forget type hints
     ...
 ```
 
@@ -224,6 +289,17 @@ def best_reading_row(matrix, threshold):
 | `best_reading_row([[-2, -1], [-3, 0]], -1)` | `0` |
 | `best_reading_row([], 0)` | `-1` |
 | `best_reading_row([[], []], 0)` | `-1` |
+
+**Try the examples:** Run these calls to check the results shown above.
+
+```python
+print(best_reading_row([[9, 0, 0], [5, 6, 1]], 5))
+print(best_reading_row([[5, 0], [6, 0]], 5))
+print(best_reading_row([[1, 2], [3, 4]], 5))
+print(best_reading_row([[-2, -1], [-3, 0]], -1))
+print(best_reading_row([], 0))
+print(best_reading_row([[], []], 0))
+```
 
 **File:** `p08_best_reading_row.py`
 
