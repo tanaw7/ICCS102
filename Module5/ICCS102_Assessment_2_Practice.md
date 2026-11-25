@@ -1,4 +1,4 @@
-# ICCS102 — Coding Assessment 2: Practice Set
+# ICCS102 — Coding Assessment 2: Practice Set B
 
 ## Python Basics Part 2
 
@@ -13,6 +13,23 @@ Complete these eight exercises to practise combining conditions, loops, collecti
 - Helper functions are allowed in the same file. Use Python 3.9 or later.
 - Assume inputs follow the conditions stated. Handle every valid input, including the stated empty cases.
 - For exam-style practice, work independently using your slides, notes, and the official Python documentation, without AI or search engines.
+
+## Required type hints
+
+**Correct results alone are not enough for full marks. Every function and method must include correct input parameter type hints and a return type annotation, including helper functions and constructors.**
+
+- Annotate every parameter except `self`.
+- Write the return type after `->`. For `__init__`, write `-> None` and annotate all other parameters.
+- Specify collection contents, such as `list[int]`, `tuple[int, int]`, or `dict[str, int]`; a bare `list`, `tuple`, `set`, or `dict` is insufficient when the contents are specified.
+- For a parameter that receives an object, use the required class name as its type.
+- Infer the types from each question. The supplied outlines deliberately omit annotations; you must complete them.
+
+For example, a function receiving a whole-number quantity and a whole-number unit price and returning a whole-number cost would have this signature:
+
+```python
+def calculate_cost(quantity: int, unit_price: int) -> int:
+    ...
+```
 
 ## Checking your work
 
@@ -210,3 +227,15 @@ def best_reading_row(matrix, threshold):
 
 **File:** `p08_best_reading_row.py`
 
+## Practice scoring
+
+For a mock assessment, allow 1 hour 40 minutes. Each exercise is worth 10 points; count your seven highest scores after deductions, for a maximum of 70. Work through all eight exercises during revision to practise every topic.
+
+An exercise starts at 10 points if its results are correct for all valid test inputs, including the required type and format. The class exercise must also store its attributes correctly. Incorrect results receive zero for that exercise. Correct results alone do not guarantee full marks.
+
+| Type-hint issue | Deduction |
+|---|---|
+| Missing or incorrect input parameter type hint, excluding `self` | −0.25 per affected parameter |
+| Missing or incorrect return type annotation, including `-> None` for `__init__` | −0.25 per function or method |
+
+These deductions also apply to helper functions and constructor parameters. The real assessment's remaining coding and submission deductions also apply when using this set as a mock assessment. Apply exercise deductions before selecting the best seven scores; no exercise score can fall below zero.
